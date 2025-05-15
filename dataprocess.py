@@ -9,7 +9,7 @@ import sqlite3
 
 def dataloading():
 # Read the csv file and store the data in the data frame
-    df = pd.read_excel('D:/Data Science/data/OLA_DataSet.xlsx')
+    df = pd.read_excel('OLA_DataSet.xlsx')
 #Verify the top 5 rows and column values
     print("Verify the data")
 
