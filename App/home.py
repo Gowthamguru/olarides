@@ -47,7 +47,7 @@ def homeinfo():
         st.write(f'##### {format_indian_number(overall_booking)}')
         st.markdown("***")
         st.write(f'#### Successful Bookings ')
-        st.write(f'##### {format_indian_number(success_booking['overall_booking'])}')
+        st.write(f'##### {format_indian_number(success_booking["overall_booking"])}')
     with col2:
         # Create the pie chart using Seaborn and Matplotlib
         fig, ax = plt.subplots(figsize=(5, 3))

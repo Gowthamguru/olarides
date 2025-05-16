@@ -83,13 +83,13 @@ def paymentinfo():
         st.table(paymentmethodval)
 
     st.markdown("***")
-    rideavg = fetchfrommysql("select  ride_distance,avg(Booking_value) value from ola_bookings where booking_status='Success' group by ride_distance order by ride_distance;")
+    rideavg = fetchfrommysql("select  Ride_Distance,avg(Booking_value) value from ola_bookings where booking_status='Success' group by ride_distance order by ride_distance;")
 
     # Create a Matplotlib figure
     fig, ax = plt.subplots(figsize=(8, 4))
 
     # Create a Seaborn line plot
-    sns.lineplot(data=rideavg, x='ride_distance', y='value', marker='o', ax=ax)
+    sns.lineplot(data=rideavg, x='Ride_Distance', y='value', marker='o', ax=ax)
 
     # Set chart labels
     ax.set_title("Average Booking value based on Distance")

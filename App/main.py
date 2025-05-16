@@ -37,7 +37,7 @@ st.markdown("""
 
 # Sidebar menu
 with st.sidebar:
-    st.sidebar.image("../Images/Ola_Cabs_logo.svg")
+    st.sidebar.image("./Images/Ola_Cabs_logo.svg")
     selected = option_menu(None, ["Home", 'Ratings','Cancellation','Payments'],
                            icons=['taxi-front-fill', 'star-half','x-octagon-fill','credit-card-2-front-fill'], menu_icon="cast", default_index=0,
     styles = {
